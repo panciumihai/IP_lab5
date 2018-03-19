@@ -15,7 +15,7 @@ public class Lab5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.print("we are dead");
+        System.out.println("we are dead. i'm just kidding");
         // TODO code application logic here
     }
     
