@@ -9,21 +9,16 @@ package lab5;
  *
  * @author Mihai
  */
-class Singleton {
-       private static Singleton singleton = new Singleton( );
+class Singleton extends Administrator{
+   private static Singleton singleton = new Singleton( );
 
-   /* A private Constructor prevents any other
-    * class from instantiating.
-    */
    private Singleton() { }
 
-   /* Static 'instance' method */
    public static Singleton getInstance( ) {
       return singleton;
    }
 
-   /* Other methods protected by singleton-ness */
-   protected static void demoMethod( ) {
+   protected static void method( ) {
       System.out.println("demoMethod for singleton");
    } 
 }
