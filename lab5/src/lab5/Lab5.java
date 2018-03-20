@@ -7,5 +7,4 @@ public class Lab5 {
         System.out.println("ALT + SHIFT + F for auto-indenting ;)");
         System.out.println("Era mai bine daca era CTRL + SHIFT + F...");
     }
-
 }
