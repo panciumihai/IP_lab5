@@ -1,12 +1,18 @@
-import java.util.Vector;
-
+package lab5;
 public class Reclame extends Cont {
 
   public String distribuitor;
 
-    public Vector  myCont;
+ 
+    public String getDistribuitor() {
+        return distribuitor;
+    }
+    public void setDistribuitor(String distribuitor) {
+        this.distribuitor = distribuitor;
+    }
 
-  public void afiseazaReclama() {
-  }
+    public void afiseazaReclama() {
+        System.out.println("Reclama afisata");
+    }
 
 }
