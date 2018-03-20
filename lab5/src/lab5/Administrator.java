@@ -20,8 +20,8 @@ public class Administrator extends Persoana {
       conturi.remove(cont);
   }
 
-  public void modificaCont(Cont cont) {
-      cont.setName = "Nume modificat";
+  public void modificaCont(Cont c) {
+      
   }
   
   public String toString()

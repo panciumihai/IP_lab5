@@ -1,16 +1,19 @@
-import java.util.Vector;
+package lab5;
+
+import java.util.ArrayList;
 
 public class Mesaj {
 
   public Utilizator expeditor;
 
   public String continut;
+  
+public Poza atasament;
 
-  public Poza atasament;
+    public ArrayList<Mesaj>  myCasutaMesaje;
 
-    public Vector  myCasutaMesaje;
-
-  public void getContinut() {
+  public String getContinut() {
+    return continut;
   }
 
 }

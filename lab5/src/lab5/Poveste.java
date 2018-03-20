@@ -1,11 +1,10 @@
-
 package lab5;
 
 import java.util.Vector;
 
 public class Poveste extends Cont {
 
-  public Vector poze;
+  public Vector<Poza> poze;
 
   public String tag;
 
@@ -45,13 +44,5 @@ public class Poveste extends Cont {
   
   public void afiseazaPoveste(){
       
-      for(Poza p : poze) {
-          System.out.println("Continut poza: "+ p.getContinut());
-          System.out.println("Numar aprecieri: "+p.getNumarAprecieri());
-      }
-      for(Comentariu c : comentarii){
-          System.out.println("Expeditor: " + c.getExpeditor());
-          System.out.println("Continut: " + c.getContinut());
-        }
   }
 }

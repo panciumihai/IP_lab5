@@ -1,33 +1,40 @@
-import java.util.Vector;
+package lab5;
+import java.util.ArrayList;
 
 public class Cont {
 
-  public java.util.Vector postari;
-
+  public ArrayList<Poza> postari;
   public String nume;
 
-  public Persoana urmaritori;
+  public ArrayList<Persoana> urmaritori;
 
-  public Integer aprecieri;
+  public int aprecieri;
 
-  public java.util.Vector povesti;
+  public ArrayList<Poveste> povesti;
 
-        public Vector  myAdministrator;
-    public Vector  myUtilizator;
 
   public void urmareste() {
+      
   }
 
-  public void adaugarePoza() {
+  public void adaugarePoza(Poza p) {
+      postari.add(p);
   }
 
   public void aprecierePoza() {
+      
   }
 
-  public void stegePoveste() {
+  public void stegePoveste(Poveste p) {
+      povesti.remove(p);
   }
 
-  public void adaugaPoveste() {
+  public void adaugaPoveste(Poveste p) {
+      povesti.add(p);
   }
-
+  
+    public String toString()
+    {
+        return "Cont";
+    }
 }
