@@ -1,12 +1,57 @@
+
+package lab5;
+
+import java.util.Vector;
+
 public class Poveste extends Cont {
 
-  public java.util.Vector poze;
+  public Vector poze;
 
   public String tag;
 
-  public Comentariu comentarii;
+  public Vector<Comentariu> comentarii;
 
-  public void editareTag() {
+  public Poveste(Vector p, String t, Comentariu c) {
+      poze=p;
+      tag=t;
+      comentarii=c;
   }
 
+    public Vector getPoze() {
+        return poze;
+    }
+
+    public void setPoze(Vector poze) {
+        this.poze = poze;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public Comentariu getComentarii() {
+        return comentarii;
+    }
+
+    public void setComentarii(Comentariu comentarii) {
+        this.comentarii = comentarii;
+    }
+  public void editareTag() {
+  }
+  
+  public void afiseazaPoveste(){
+      
+      for(Poza p : poze) {
+          System.out.println("Continut poza: "+ p.getContinut());
+          System.out.println("Numar aprecieri: "+p.getNumarAprecieri());
+      }
+      for(Comentariu c : comentarii){
+          System.out.println("Expeditor: " + c.getExpeditor());
+          System.out.println("Continut: " + c.getContinut());
+        }
+  }
 }

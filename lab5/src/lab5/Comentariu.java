@@ -6,6 +6,12 @@ public class Comentariu {
 
   public Integer numarAprecieri;
 
-      public Vector  myPoza;
+  public Comentariu(){}
+  
+  public Comentariu(String c, int nr)
+  {
+      continut=c;
+      numarAprecieri=nr;
+  }
 
 }
