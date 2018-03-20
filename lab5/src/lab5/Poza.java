@@ -1,10 +1,7 @@
 package lab5;
-<<<<<<< HEAD
 
 import java.util.Vector;
-=======
 import java.util.ArrayList;
->>>>>>> 4069c3370c89683cb3726dbebfbb67cdd5bc88ac
 
 public class Poza extends Cont {
 
@@ -47,15 +44,6 @@ public class Poza extends Cont {
   public void comentarePoza() {
       System.out.println("Comentariul a fost postat!");
   }
-
-    String getContinut() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getNumarAprecieri() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-  
   
 
 }
